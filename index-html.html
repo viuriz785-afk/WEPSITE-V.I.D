@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>V.I.D Studio — Every Frame Tells a Story</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<!-- Page Transition -->
+<div class="page-transition" id="pageTransition">
+  <div class="pt-bar"></div>
+  <div class="pt-bar"></div>
+  <div class="pt-bar"></div>
+  <div class="pt-bar"></div>
+  <div class="pt-bar"></div>
+</div>
+
+<!-- Mobile Menu -->
+<div class="nav-mobile-menu" id="mobileMenu">
+  <a href="#home" onclick="closeMobile()">Home</a>
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#services" onclick="closeMobile()">Services</a>
+  <a href="#portfolio" onclick="closeMobile()">Portfolio</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#home" class="nav-logo"><span class="glitch-wrap" data-text="V.I.D">V<span>.</span>I<span>.</span>D</span></a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Get in Touch</a>
+  <div class="nav-hamburger" id="hamburger" onclick="toggleMobile()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-video-placeholder">
+    <img class="hero-bg-img" src="https://i.imgur.com/wqt9qC6.jpg" alt="V.I.D Studio"/>
+    <svg class="hero-camera" viewBox="0 0 560 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="bodyGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2a2a2a"/><stop offset="40%" stop-color="#1a1a1a"/><stop offset="100%" stop-color="#0d0d0d"/></linearGradient>
+        <linearGradient id="gripGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#111"/><stop offset="100%" stop-color="#1e1e1e"/></linearGradient>
+        <radialGradient id="lensRad" cx="38%" cy="36%" r="55%"><stop offset="0%" stop-color="#1e1e1e"/><stop offset="40%" stop-color="#080808"/><stop offset="80%" stop-color="#050505"/><stop offset="100%" stop-color="#111"/></radialGradient>
+        <radialGradient id="lensShine" cx="30%" cy="28%" r="40%"><stop offset="0%" stop-color="rgba(192,57,43,0.25)"/><stop offset="60%" stop-color="rgba(255,255,255,0.04)"/><stop offset="100%" stop-color="transparent"/></radialGradient>
+        <linearGradient id="topGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#222"/><stop offset="100%" stop-color="#181818"/></linearGradient>
+        <linearGradient id="screenGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0a1520"/><stop offset="100%" stop-color="#050a0f"/></linearGradient>
+      </defs>
+      <rect x="30" y="115" width="78" height="220" rx="8" fill="url(#gripGrad)"/>
+      <rect x="30" y="115" width="78" height="220" rx="8" fill="none" stroke="#333" stroke-width="0.5"/>
+      <line x1="42" y1="140" x2="42" y2="310" stroke="#0a0a0a" stroke-width="1.5"/>
+      <line x1="50" y1="140" x2="50" y2="310" stroke="#0a0a0a" stroke-width="1.5"/>
+      <line x1="58" y1="140" x2="58" y2="310" stroke="#0a0a0a" stroke-width="1.5"/>
+      <line x1="66" y1="140" x2="66" y2="310" stroke="#0a0a0a" stroke-width="1.5"/>
+      <line x1="74" y1="140" x2="74" y2="310" stroke="#0a0a0a" stroke-width="1.5"/>
+      <line x1="82" y1="140" x2="82" y2="310" stroke="#0a0a0a" stroke-width="1.5"/>
+      <rect x="36" y="150" width="52" height="145" rx="3" fill="#111" opacity="0.6"/>
+      <rect x="100" y="108" width="340" height="230" rx="6" fill="url(#bodyGrad)"/>
+      <rect x="100" y="108" width="340" height="230" rx="6" fill="none" stroke="#2a2a2a" stroke-width="1"/>
+      <rect x="100" y="68" width="340" height="48" rx="4" fill="url(#topGrad)"/>
+      <rect x="100" y="68" width="340" height="48" rx="4" fill="none" stroke="#2a2a2a" stroke-width="0.8"/>
+      <circle cx="420" cy="90" r="26" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+      <circle cx="420" cy="90" r="20" fill="#222" stroke="#444" stroke-width="0.5"/>
+      <circle cx="420" cy="90" r="5" fill="#555"/>
+      <line x1="420" y1="66" x2="420" y2="70" stroke="#c0392b" stroke-width="2" stroke-linecap="round"/>
+      <line x1="444" y1="90" x2="440" y2="90" stroke="#888" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="396" y1="90" x2="400" y2="90" stroke="#888" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="420" y1="114" x2="420" y2="110" stroke="#888" stroke-width="1.5" stroke-linecap="round"/>
+      <text x="420" y="94" fill="#bbb" font-size="8" font-family="monospace" text-anchor="middle">M</text>
+      <ellipse cx="165" cy="82" rx="16" ry="13" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+      <ellipse cx="165" cy="80" rx="11" ry="9" fill="#c0392b"/>
+      <ellipse cx="162" cy="78" rx="4" ry="3" fill="rgba(255,255,255,0.15)"/>
+      <rect x="200" y="70" width="50" height="22" rx="11" fill="#1a1a1a" stroke="#333" stroke-width="0.8"/>
+      <rect x="215" y="73" width="20" height="16" rx="8" fill="#2a2a2a"/>
+      <rect x="135" y="72" width="24" height="12" rx="6" fill="#111" stroke="#333" stroke-width="0.8"/>
+      <circle cx="151" cy="78" r="4" fill="#c0392b"/>
+      <text x="270" y="290" fill="#888" font-size="13" font-family="Arial" text-anchor="middle" letter-spacing="3" font-weight="300">SONY</text>
+      <text x="270" y="305" fill="#555" font-size="8" font-family="Arial" text-anchor="middle" letter-spacing="2">α7 III</text>
+      <rect x="310" y="125" width="118" height="88" rx="3" fill="#080808" stroke="#222" stroke-width="1"/>
+      <rect x="314" y="129" width="110" height="80" rx="2" fill="url(#screenGrad)"/>
+      <rect x="318" y="133" width="102" height="72" fill="#030810"/>
+      <rect x="322" y="172" width="4" height="18" fill="rgba(192,57,43,0.5)"/>
+      <rect x="328" y="165" width="4" height="25" fill="rgba(192,57,43,0.6)"/>
+      <rect x="334" y="158" width="4" height="32" fill="rgba(192,57,43,0.7)"/>
+      <rect x="340" y="162" width="4" height="28" fill="rgba(192,57,43,0.6)"/>
+      <rect x="346" y="170" width="4" height="20" fill="rgba(192,57,43,0.5)"/>
+      <rect x="352" y="175" width="4" height="15" fill="rgba(192,57,43,0.4)"/>
+      <text x="322" y="142" fill="#c0392b" font-size="5.5" font-family="monospace">ISO 3200</text>
+      <text x="357" y="142" fill="#aaa" font-size="5.5" font-family="monospace">1/500</text>
+      <text x="322" y="150" fill="#aaa" font-size="5.5" font-family="monospace">f/1.8</text>
+      <text x="357" y="150" fill="#aaa" font-size="5.5" font-family="monospace">4K</text>
+      <circle cx="408" cy="138" r="4" fill="#c0392b" opacity="0.9"/>
+      <text x="414" y="141" fill="#c0392b" font-size="5" font-family="monospace">REC</text>
+      <rect x="218" y="55" width="104" height="58" rx="5" fill="#1c1c1c" stroke="#2a2a2a" stroke-width="0.8"/>
+      <rect x="226" y="60" width="88" height="46" rx="3" fill="#111"/>
+      <rect x="230" y="63" width="80" height="40" rx="2" fill="#080808"/>
+      <ellipse cx="270" cy="78" rx="25" ry="14" fill="#050510"/>
+      <ellipse cx="263" cy="73" rx="8" ry="5" fill="rgba(192,57,43,0.06)"/>
+      <rect x="318" y="222" width="34" height="14" rx="7" fill="#1a1a1a" stroke="#333" stroke-width="0.8"/>
+      <text x="335" y="232" fill="#777" font-size="5.5" font-family="Arial" text-anchor="middle">AF-ON</text>
+      <circle cx="390" cy="228" r="12" fill="#1a1a1a" stroke="#333" stroke-width="0.8"/>
+      <circle cx="390" cy="228" r="6" fill="#222" stroke="#444" stroke-width="0.5"/>
+      <circle cx="390" cy="228" r="2" fill="#555"/>
+      <circle cx="432" cy="155" r="8" fill="#1a1a1a" stroke="#333" stroke-width="0.8"/>
+      <text x="432" y="158" fill="#888" font-size="5.5" font-family="Arial" text-anchor="middle">MENU</text>
+      <circle cx="432" cy="185" r="7" fill="#1a1a1a" stroke="#333" stroke-width="0.8"/>
+      <text x="432" y="188" fill="#888" font-size="5" font-family="Arial" text-anchor="middle">C1</text>
+      <circle cx="432" cy="212" r="7" fill="#1a1a1a" stroke="#333" stroke-width="0.8"/>
+      <text x="432" y="215" fill="#888" font-size="5" font-family="Arial" text-anchor="middle">C2</text>
+      <circle cx="390" cy="260" r="18" fill="#1a1a1a" stroke="#2a2a2a" stroke-width="1"/>
+      <circle cx="390" cy="260" r="9" fill="#222"/>
+      <polygon points="390,246 386,252 394,252" fill="#444"/>
+      <polygon points="390,274 386,268 394,268" fill="#444"/>
+      <polygon points="376,260 382,256 382,264" fill="#444"/>
+      <polygon points="404,260 398,256 398,264" fill="#444"/>
+      <circle cx="195" cy="228" r="92" fill="#151515" stroke="#222" stroke-width="2"/>
+      <circle cx="195" cy="228" r="86" fill="#111" stroke="#1a1a1a" stroke-width="1"/>
+      <circle cx="195" cy="228" r="82" fill="#0d0d0d" stroke="#222" stroke-width="1.5"/>
+      <circle cx="195" cy="228" r="78" fill="none" stroke="#1e1e1e" stroke-width="1"/>
+      <circle cx="195" cy="228" r="72" fill="none" stroke="#252525" stroke-width="2"/>
+      <circle cx="195" cy="228" r="65" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+      <g stroke="#333" stroke-width="1.2">
+        <line x1="195" y1="150" x2="195" y2="155"/>
+        <line x1="195" y1="301" x2="195" y2="306"/>
+        <line x1="119" y1="228" x2="124" y2="228"/>
+        <line x1="266" y1="228" x2="271" y2="228"/>
+        <line x1="141" y1="174" x2="145" y2="178"/>
+        <line x1="245" y1="278" x2="249" y2="282"/>
+        <line x1="245" y1="174" x2="241" y2="178"/>
+        <line x1="141" y1="278" x2="145" y2="274"/>
+      </g>
+      <circle cx="195" cy="228" r="58" fill="url(#lensRad)"/>
+      <circle cx="195" cy="228" r="48" fill="#030308"/>
+      <circle cx="195" cy="228" r="42" fill="#050510"/>
+      <circle cx="195" cy="228" r="35" fill="#030308"/>
+      <circle cx="195" cy="228" r="28" fill="#070718"/>
+      <circle cx="195" cy="228" r="20" fill="#020208"/>
+      <circle cx="195" cy="228" r="12" fill="#050510"/>
+      <circle cx="195" cy="228" r="6" fill="#080810"/>
+      <circle cx="195" cy="228" r="58" fill="url(#lensShine)" opacity="0.8"/>
+      <ellipse cx="178" cy="212" rx="14" ry="9" fill="rgba(192,57,43,0.08)" transform="rotate(-20,178,212)"/>
+      <ellipse cx="182" cy="208" rx="5" ry="3" fill="rgba(255,255,255,0.06)" transform="rotate(-20,182,208)"/>
+      <circle cx="176" cy="210" r="2.5" fill="rgba(255,255,255,0.08)"/>
+      <circle cx="195" cy="228" r="10" fill="none" stroke="rgba(192,57,43,0.3)" stroke-width="0.8"/>
+      <circle cx="143" cy="288" r="7" fill="#c0392b" stroke="#8b2418" stroke-width="1"/>
+      <circle cx="143" cy="288" r="4" fill="#a03020"/>
+      <rect x="100" y="330" width="340" height="8" rx="3" fill="#111" stroke="#1a1a1a" stroke-width="0.5"/>
+      <rect x="225" y="333" width="24" height="5" rx="2" fill="#0d0d0d" stroke="#222" stroke-width="0.5"/>
+      <rect x="435" y="200" width="8" height="45" rx="3" fill="#111" stroke="#1a1a1a" stroke-width="0.5"/>
+      <rect x="437" y="205" width="4" height="20" rx="1" fill="#0a0a0a"/>
+      <rect x="435" y="260" width="8" height="12" rx="1" fill="#111" stroke="#1a1a1a" stroke-width="0.5"/>
+      <rect x="435" y="276" width="8" height="10" rx="1" fill="#111" stroke="#1a1a1a" stroke-width="0.5"/>
+      <text x="310" y="320" fill="#444" font-size="7" font-family="monospace" letter-spacing="1.5">ILCE-7M3</text>
+      <line x1="108" y1="108" x2="108" y2="335" stroke="#c0392b" stroke-width="1.5" opacity="0.4"/>
+    </svg>
+    <div class="play-btn" title="Watch Showreel"></div>
+  </div>
+  <div class="hero-bg"></div>
+  <div class="hero-scroll"><div class="scroll-line"></div><span>Scroll</span></div>
+  <p class="hero-eyebrow">Cinematography · Content Creation · Visual Storytelling</p>
+  <h1 class="hero-title">
+    <span class="glitch-wrap" data-text="Every - V.I.D">Every - V.I.D</span><br>
+    <span class="glitch-wrap" data-text="Frame">Frame</span><br>
+    <em>Tells a Story</em>
+  </h1>
+  <p class="hero-sub">V.I.D Studio — Creative visual agency berbasis di Batam yang membantu bisnis Anda berkembang melalui konten visual berkualitas sinematik.</p>
+  <div class="hero-bottom">
+    <a href="#portfolio" class="btn-primary">Lihat Portofolio</a>
+    <a href="#services" class="btn-ghost">Layanan Kami →</a>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat-item"><span class="stat-num" data-target="200" data-suffix="+">0</span><span class="stat-label">Project Selesai</span></div>
+  <div class="stat-item"><span class="stat-num" data-target="5" data-suffix="+">0</span><span class="stat-label">Tahun Pengalaman</span></div>
+  <div class="stat-item"><span class="stat-num" data-target="50" data-suffix="+">0</span><span class="stat-label">Klien Puas</span></div>
+  <div class="stat-item"><span class="stat-num" data-target="0" data-text="4K">0</span><span class="stat-label">Kualitas Produksi</span></div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <div class="about-badge"><span>Tentang Kami</span></div>
+      <h2 class="section-title">Kami Adalah<br><em>Visual</em><br>Storyteller</h2>
+      <div class="about-line"><div class="about-line-dot"></div></div>
+      <p>V.I.D Studio hadir sebagai creative visual agency yang berfokus pada kualitas sinematik dan pendekatan storytelling yang kuat. Kami percaya bahwa setiap frame memiliki kekuatan untuk menyampaikan pesan yang bermakna.</p>
+      <p>Dari UMKM lokal hingga perusahaan besar, kami hadir untuk membantu brand Anda tampil lebih kuat, lebih berkesan, dan lebih relevan di era visual.</p>
+      <div class="about-mini-stats">
+        <div class="about-mini-stat"><span class="about-mini-stat-num">200+</span><span class="about-mini-stat-label">Project</span></div>
+        <div class="about-mini-stat"><span class="about-mini-stat-num">5+</span><span class="about-mini-stat-label">Tahun</span></div>
+        <div class="about-mini-stat"><span class="about-mini-stat-num">50+</span><span class="about-mini-stat-label">Klien</span></div>
+      </div>
+    </div>
+    <div class="values-grid reveal">
+      <div class="value-item"><span class="value-icon">🎬</span><span class="value-title">Storytelling First</span><div class="value-desc">Setiap karya dimulai dari cerita yang kuat dan bermakna.</div></div>
+      <div class="value-item"><span class="value-icon">✦</span><span class="value-title">Cinematic Quality</span><div class="value-desc">Standar produksi sinematik di setiap detail visual.</div></div>
+      <div class="value-item"><span class="value-icon">⚙</span><span class="value-title">Pro Workflow</span><div class="value-desc">Proses kerja profesional, terstruktur, dan tepat waktu.</div></div>
+      <div class="value-item"><span class="value-icon">◈</span><span class="value-title">Innovation</span><div class="value-desc">Selalu menghadirkan pendekatan kreatif yang segar.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="services-header reveal">
+    <div><span class="section-label">Layanan Kami</span><h2 class="section-title">Apa yang<br><em>Kami</em> Lakukan</h2></div>
+    <a href="#contact" class="btn-ghost">Diskusi Project →</a>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal"><div class="service-num">01</div><div class="service-title">Content Creation</div><p class="service-desc">Konten visual untuk media sosial, digital campaign, dan kebutuhan brand Anda.</p><div class="service-tags"><span class="service-tag">Reels</span><span class="service-tag">Social Media</span><span class="service-tag">Campaign</span></div></div>
+    <div class="service-card reveal"><div class="service-num">02</div><div class="service-title">Commercial Video</div><p class="service-desc">Video iklan produk dan brand dengan pendekatan sinematik yang memukau.</p><div class="service-tags"><span class="service-tag">TVC</span><span class="service-tag">Product</span><span class="service-tag">Brand Film</span></div></div>
+    <div class="service-card reveal"><div class="service-num">03</div><div class="service-title">Company Profile</div><p class="service-desc">Visualisasikan identitas dan nilai perusahaan Anda secara profesional.</p><div class="service-tags"><span class="service-tag">Corporate</span><span class="service-tag">Profile</span><span class="service-tag">Documentary</span></div></div>
+    <div class="service-card reveal"><div class="service-num">04</div><div class="service-title">Event Documentation</div><p class="service-desc">Abadikan momen berharga event Anda — konferensi, seminar, peluncuran produk.</p><div class="service-tags"><span class="service-tag">Conference</span><span class="service-tag">Launch</span><span class="service-tag">Highlight</span></div></div>
+    <div class="service-card reveal"><div class="service-num">05</div><div class="service-title">Wedding Film</div><p class="service-desc">Cerita cinta Anda layak diabadikan dalam film sinematik yang indah dan penuh emosi.</p><div class="service-tags"><span class="service-tag">Cinematic</span><span class="service-tag">Documentary</span><span class="service-tag">SDE</span></div></div>
+    <div class="service-card reveal" style="background:var(--gold-dim);border:1px solid rgba(192,57,43,0.2)">
+      <div class="service-num" style="opacity:0.4">—</div>
+      <div class="service-title" style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:28px;color:var(--gold)">"Every Frame Tells a Story."</div>
+      <p class="service-desc" style="margin-top:20px">Punya kebutuhan khusus? Mari diskusikan bersama.</p>
+      <a href="#contact" class="btn-primary" style="margin-top:24px;display:inline-block">Konsultasi Gratis</a>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="portfolio-header reveal">
+    <div><span class="section-label">Portofolio</span><h2 class="section-title">Karya<br><em>Terbaik</em> Kami</h2></div>
+    <a href="#contact" class="btn-ghost">Diskusi Project →</a>
+  </div>
+  <div class="portfolio-filters reveal">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="wedding">Wedding Film</button>
+    <button class="filter-btn" data-filter="commercial">Commercial</button>
+    <button class="filter-btn" data-filter="corporate">Corporate</button>
+    <button class="filter-btn" data-filter="event">Event</button>
+    <button class="filter-btn" data-filter="content">Content</button>
+  </div>
+  <div class="portfolio-grid" id="portfolioGrid">
+    <div class="port-item" data-category="wedding" data-index="0" onclick="openLightbox(0)"><div class="port-inner"><div class="port-bg" style="background:linear-gradient(135deg,#1a1208 0%,#2d1e08 40%,#0d0d0d 100%)"></div><div class="port-play">▶</div><div class="port-view-tag">View</div><div class="port-overlay"><span class="port-category">Wedding Film</span><div class="port-name">Rizky & Putri — Batam 2024</div></div></div></div>
+    <div class="port-item" data-category="commercial" data-index="1" onclick="openLightbox(1)"><div class="port-inner"><div class="port-bg" style="background:linear-gradient(135deg,#0d1520 0%,#1a2030 100%)"></div><div class="port-play">▶</div><div class="port-view-tag">View</div><div class="port-overlay"><span class="port-category">Commercial Video</span><div class="port-name">Brand Campaign — Local Brand</div></div></div></div>
+    <div class="port-item" data-category="corporate" data-index="2" onclick="openLightbox(2)"><div class="port-inner"><div class="port-bg" style="background:linear-gradient(135deg,#1a0d08 0%,#2d1508 100%)"></div><div class="port-play">▶</div><div class="port-view-tag">View</div><div class="port-overlay"><span class="port-category">Company Profile</span><div class="port-name">PT. Harmoni — Corporate Film</div></div></div></div>
+    <div class="port-item" data-category="event" data-index="3" onclick="openLightbox(3)"><div class="port-inner"><div class="port-bg" style="background:linear-gradient(135deg,#0d1a10 0%,#0d2010 100%)"></div><div class="port-play">▶</div><div class="port-view-tag">View</div><div class="port-overlay"><span class="port-category">Event Documentation</span><div class="port-name">Batam Business Summit</div></div></div></div>
+    <div class="port-item" data-category="content" data-index="4" onclick="openLightbox(4)"><div class="port-inner"><div class="port-bg" style="background:linear-gradient(135deg,#1a0d14 0%,#2d0d20 100%)"></div><div class="port-play">▶</div><div class="port-view-tag">View</div><div class="port-overlay"><span class="port-category">Content Creation</span><div class="port-name">Social Media Series — UMKM</div></div></div></div>
+    <div class="port-item" data-category="wedding" data-index="5" onclick="openLightbox(5)"><div class="port-inner"><div class="port-bg" style="background:linear-gradient(135deg,#1a1208 0%,#302010 100%)"></div><div class="port-play">▶</div><div class="port-view-tag">View</div><div class="port-overlay"><span class="port-category">Wedding Film</span><div class="port-name">Sinematic Wedding — 2024</div></div></div></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <span class="section-label">Hubungi Kami</span>
+      <h2 class="section-title">Mulai<br><em>Project</em><br>Bersama</h2>
+      <div class="divider"></div>
+      <h3>"Ceritakan visi Anda kepada kami, dan kami akan menghadirkannya dalam setiap frame."</h3>
+      <div class="contact-links">
+        <a href="https://wa.me/6281234567890" class="contact-link" target="_blank"><div class="contact-link-icon">💬</div><div class="contact-link-info"><small>WhatsApp</small><span>+62 812-3456-7890</span></div></a>
+        <a href="mailto:hello@vidstudio.id" class="contact-link"><div class="contact-link-icon">✉</div><div class="contact-link-info"><small>Email</small><span>hello@vidstudio.id</span></div></a>
+        <a href="https://instagram.com/vidstudio.id" class="contact-link" target="_blank"><div class="contact-link-icon">◈</div><div class="contact-link-info"><small>Instagram</small><span>@vidstudio.id</span></div></a>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="contact-form">
+        <div class="form-row">
+          <div class="form-group"><label>Nama Lengkap</label><input type="text" placeholder="Nama Anda"></div>
+          <div class="form-group"><label>No. WhatsApp</label><input type="text" placeholder="+62..."></div>
+        </div>
+        <div class="form-group"><label>Email</label><input type="email" placeholder="email@anda.com"></div>
+        <div class="form-group"><label>Layanan yang Dibutuhkan</label>
+          <select><option value="">— Pilih Layanan —</option><option>Content Creation</option><option>Commercial Video</option><option>Company Profile</option><option>Event Documentation</option><option>Wedding Film</option><option>Lainnya</option></select>
+        </div>
+        <div class="form-group"><label>Ceritakan Project Anda</label><textarea placeholder="Deskripsi singkat tentang project, tanggal, lokasi, dan kebutuhan khusus..."></textarea></div>
+        <button class="btn-submit">Kirim Konsultasi →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">V<span>.</span>I<span>.</span>D Studio</div>
+  <div class="footer-tagline">"Every Frame Tells a Story."</div>
+  <div class="footer-copy">© 2024 V.I.D Studio. Batam, Indonesia.</div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/6281234567890" class="wa-float" target="_blank" title="Chat WhatsApp">
+  <div class="wa-tooltip">Chat dengan kami!</div>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <div class="lb-backdrop" onclick="closeLightbox()"></div>
+  <div class="lb-modal">
+    <button class="lb-close" onclick="closeLightbox()">✕</button>
+    <div class="lb-media">
+      <div class="lb-media-bg" id="lbBg">
+        <div class="lb-play" id="lbPlayBtn">▶</div>
+        <iframe id="lbIframe" style="display:none;position:absolute;inset:0;width:100%;height:100%;border:none;" allowfullscreen allow="autoplay"></iframe>
+      </div>
+    </div>
+    <div class="lb-body">
+      <div>
+        <span class="lb-category" id="lbCategory"></span>
+        <div class="lb-title" id="lbTitle"></div>
+        <div class="lb-desc" id="lbDesc"></div>
+        <div class="lb-tags" id="lbTags"></div>
+      </div>
+      <div>
+        <div class="lb-nav">
+          <button class="lb-nav-btn" onclick="prevProject()">‹</button>
+          <button class="lb-nav-btn" onclick="nextProject()">›</button>
+        </div>
+        <div class="lb-counter" id="lbCounter"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
